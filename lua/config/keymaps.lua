@@ -1,3 +1,12 @@
--- Keymaps are automatically loaded on the VeryLazy event
--- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
--- Add any additional keymaps here
+local map = vim.api.nvim_set_keymap
+local opt = { noremap = true, silent = true }
+
+map("n", "H", "H", opt) -- Normal mode
+map("v", "H", "H", opt) -- Visual mode
+map("s", "H", "H", opt) -- Select mode
+
+map("n", "L", "L", opt) -- Normal mode
+map("v", "L", "L", opt) -- Visual mode
+map("s", "L", "L", opt) -- Select mode
+
+return {}

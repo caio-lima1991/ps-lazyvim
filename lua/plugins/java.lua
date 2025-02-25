@@ -16,8 +16,8 @@ return {
           configuration = {
             runtimes = {
               {
-                name = "JavaSE-11",
-                path = "/usr/lib/jvm/java-11-openjdk-amd64",
+                name = "JavaSE-Corretto-11",
+                path = "~/openJdk/amazon-corretto-11.0.26.4.1-linux-x64",
               },
               {
                 name = "JavaSE-17",

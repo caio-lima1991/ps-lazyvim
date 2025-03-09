@@ -9,10 +9,10 @@ return {
             source = "filesystem",
             toggle = true,
             reveal = true,
-            position = "current",
+            position = "float",
           })
         end,
-        desc = "NeoTree Fullscreen",
+        desc = "NeoTree Float",
       },
       {
         "<leader>be",
@@ -21,10 +21,10 @@ return {
             source = "buffers",
             toggle = true,
             reveal = true,
-            position = "current",
+            position = "float",
           })
         end,
-        desc = "NeoTree Fullscreen",
+        desc = "NeoTree Float",
       },
       {
         "<leader>ge",
@@ -33,10 +33,10 @@ return {
             source = "git_status",
             toggle = true,
             reveal = true,
-            position = "current",
+            position = "float",
           })
         end,
-        desc = "NeoTree Fullscreen",
+        desc = "NeoTree Float",
       },
     },
   },

@@ -5,19 +5,19 @@ return {
       local install_path = require("mason-registry").get_package("jdtls"):get_install_path()
       local jvmArg = "-javaagent:" .. install_path .. "/lombok.jar"
       table.insert(opts.cmd, "--jvm-arg=" .. jvmArg)
+      table.insert(opts.cmd, "--java-executable=/usr/lib/jvm/java-21-openjdk-amd64/bin/java")
 
       opts.settings = {
-
         java = {
-          home = "/usr/lib/jvm/java-17-openjdk-amd64/bin/java",
           eclipse = {
             downloadSources = true,
           },
+          autobuild = { enabled = true },
           configuration = {
             runtimes = {
               {
                 name = "JavaSE-Corretto-11",
-                path = "~/openJdk/amazon-corretto-11.0.26.4.1-linux-x64",
+                path = "/opt/jvm/amazon-corretto-11.0.26.4.1-linux-x64",
               },
               {
                 name = "JavaSE-17",

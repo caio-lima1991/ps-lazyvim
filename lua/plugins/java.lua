@@ -32,7 +32,7 @@ return {
           format = {
             enabled = true,
             settings = {
-              url = vim.fn.expand("~/eclipse-java-google-style.xml"),
+              url = vim.fn.expand("~/.config/nvim/lua/resources/intellij-java-google-style.xml"),
               profile = "GoogleStyle",
             },
           },

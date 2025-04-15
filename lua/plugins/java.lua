@@ -4,6 +4,7 @@ return {
     jdtls = function(opts)
       local install_path = require("mason-registry").get_package("jdtls"):get_install_path()
       local jvmArg = "-javaagent:" .. install_path .. "/lombok.jar"
+      table.insert(opts.cmd, "--jvm-arg=" .. jvmArg)
       table.insert(opts.cmd, "--java-executable=/usr/lib/jvm/java-21-openjdk-amd64/bin/java")
 
       opts.settings = {

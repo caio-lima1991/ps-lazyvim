@@ -7,14 +7,8 @@ return {
 			javascript = { "prettierd", "eslint_d" },
 			typescript = { "prettierd", "eslint_d" },
 			java = { "astyle" },
-			sql = { "sqlfluff" },
+			sql = { "sqruff" },
+			markdown = { "prettier" },
 		},
-		format_on_save = {
-			lsp_fallback = true,
-			async = false,
-			timeout_ms = 1000,
-		},
-		-- Você pode adicionar outras opções de configuração do conform aqui, se desejar.
 	},
 }
-

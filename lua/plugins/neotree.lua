@@ -1,43 +1,21 @@
 return {
-  {
-    "nvim-neo-tree/neo-tree.nvim",
-    keys = {
-      {
-        "<leader>fe",
-        function()
-          require("neo-tree.command").execute({
-            source = "filesystem",
-            toggle = true,
-            reveal = true,
-            position = "float",
-          })
-        end,
-        desc = "NeoTree Float",
-      },
-      {
-        "<leader>be",
-        function()
-          require("neo-tree.command").execute({
-            source = "buffers",
-            toggle = true,
-            reveal = true,
-            position = "float",
-          })
-        end,
-        desc = "NeoTree Float",
-      },
-      {
-        "<leader>ge",
-        function()
-          require("neo-tree.command").execute({
-            source = "git_status",
-            toggle = true,
-            reveal = true,
-            position = "float",
-          })
-        end,
-        desc = "NeoTree Float",
-      },
-    },
-  },
+	"nvim-neo-tree/neo-tree.nvim",
+	opts = {
+		filesystem = { hijack_netrw_behavior = "open_default" },
+		default_component_configs = {
+			file_size = {
+				enabled = false,
+			},
+			type = {
+				enabled = false,
+			},
+
+			last_modified = {
+				enabled = false,
+			},
+			created = {
+				enabled = false,
+			},
+		},
+	},
 }
